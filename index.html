@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Balsam Clinics | Thoughtful Dental Care in Dubai</title>
-  <meta name="description" content="Discover patient-focused dental care at Balsam Clinics in Dubai Science Park. Explore dental treatments and arrange your appointment with our team.">
-  <meta name="theme-color" content="#26352F">
+  <meta name="description" content="Discover patient-focused dental care at Balsam Clinics in Dubai Science Park. Explore dental implants, smile treatments and personalised dental care.">
+  <meta name="theme-color" content="#805B37">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.balsam.clinic/">
 
@@ -16,21 +17,25 @@
 
   <style>
     :root {
-      --primary: #26352F;
-      --primary-dark: #18241F;
-      --primary-light: #52685B;
-      --sage: #91A394;
-      --sage-light: #DCE4DC;
-      --champagne: #B89B73;
-      --heading: #202723;
-      --body: #505650;
-      --muted: #858981;
-      --background: #F8F7F3;
-      --background-alt: #EFECE5;
+      --primary: #AF804F;
+      --primary-dark: #805B37;
+      --primary-light: #AF804F;
+
+      --sage: #C6A783;
+      --sage-light: #F0E5D8;
+      --champagne: #D2B58F;
+
+      --heading: #29231D;
+      --body: #575047;
+      --muted: #898176;
+
+      --background: #FAF8F4;
+      --background-alt: #F2EDE6;
       --surface: #FFFFFF;
-      --surface-alt: #E8E9E2;
-      --border: #E3E1D9;
-      --border-strong: #C9C9BF;
+      --surface-alt: #EEE6DC;
+
+      --border: #E6DED4;
+      --border-strong: #CDBBA6;
 
       --font-heading: "DM Serif Display", Georgia, serif;
       --font-body: "Manrope", Arial, sans-serif;
@@ -41,8 +46,8 @@
       --radius-lg: 26px;
       --radius-xl: 38px;
 
-      --shadow-soft: 0 14px 40px rgba(30, 42, 35, .07);
-      --shadow-card: 0 24px 60px rgba(30, 42, 35, .10);
+      --shadow-soft: 0 14px 40px rgba(80, 59, 38, .07);
+      --shadow-card: 0 24px 60px rgba(80, 59, 38, .12);
     }
 
     *,
@@ -58,7 +63,7 @@
 
     body {
       margin: 0;
-      padding: 0 0 0;
+      padding: 0;
       color: var(--body);
       background: var(--background);
       font-family: var(--font-body);
@@ -88,7 +93,6 @@
       font: inherit;
     }
 
-    /* Shared SVG icon rules (fix: icons are inline SVG, no font glyphs) */
     svg {
       flex-shrink: 0;
     }
@@ -130,7 +134,7 @@
       align-items: center;
       gap: 10px;
       margin: 0 0 18px;
-      color: var(--primary-light);
+      color: var(--primary);
       font-size: 10px;
       font-weight: 800;
       letter-spacing: .19em;
@@ -145,23 +149,15 @@
       content: "";
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    p {
+    h1, h2, h3, h4, p {
       margin-top: 0;
     }
 
-    h1,
-    h2,
-    h3,
-    h4 {
+    h1, h2, h3, h4 {
       color: var(--heading);
     }
 
-    h1,
-    h2 {
+    h1, h2 {
       font-family: var(--font-heading);
       font-weight: 400;
       letter-spacing: -.035em;
@@ -229,6 +225,7 @@
 
     .text-link:hover {
       gap: 15px;
+      color: var(--primary-dark);
     }
 
     .text-link .icon-arrow {
@@ -282,7 +279,7 @@
     .button--outline {
       border-color: var(--border-strong);
       background: transparent;
-      color: var(--primary);
+      color: var(--primary-dark);
     }
 
     .button--outline:hover {
@@ -296,7 +293,7 @@
     .announcement {
       padding: 9px 20px;
       background: var(--primary-dark);
-      color: rgba(255, 255, 255, .86);
+      color: rgba(255, 255, 255, .9);
       font-size: 10px;
       font-weight: 600;
       letter-spacing: .08em;
@@ -304,7 +301,7 @@
     }
 
     .announcement a {
-      color: #E4D2B8;
+      color: #EED9BE;
       font-weight: 800;
     }
 
@@ -312,8 +309,8 @@
       position: sticky;
       z-index: 1000;
       top: 0;
-      border-bottom: 1px solid rgba(38, 53, 47, .08);
-      background: rgba(248, 247, 243, .96);
+      border-bottom: 1px solid rgba(175, 128, 79, .13);
+      background: rgba(250, 248, 244, .96);
       backdrop-filter: blur(16px);
     }
 
@@ -329,16 +326,9 @@
       display: inline-flex;
       flex-shrink: 0;
       flex-direction: column;
-      color: var(--primary);
+      color: var(--primary-dark);
       line-height: 1;
     }
-
-    /*
-      Brand note:
-      The original logo artwork is intentionally not recreated or recoloured.
-      Replace this text wordmark with the clinic's approved original logo asset
-      when that source file is supplied for implementation.
-    */
 
     .brand-name {
       font-family: var(--font-heading);
@@ -348,7 +338,7 @@
 
     .brand-subtitle {
       margin-top: 6px;
-      color: var(--primary-light);
+      color: var(--primary);
       font-size: 8px;
       font-weight: 800;
       letter-spacing: .24em;
@@ -369,7 +359,7 @@
     }
 
     .nav-menu a:hover {
-      color: var(--primary-light);
+      color: var(--primary);
     }
 
     .nav-actions {
@@ -379,7 +369,7 @@
     }
 
     .nav-phone {
-      color: var(--primary);
+      color: var(--primary-dark);
       font-size: 11px;
       font-weight: 800;
       white-space: nowrap;
@@ -432,8 +422,8 @@
       overflow: hidden;
       padding: 100px 0 96px;
       background:
-        radial-gradient(ellipse at 85% 30%, rgba(145, 163, 148, .22), transparent 34%),
-        linear-gradient(115deg, #F8F7F3 0%, #F3F1E9 100%);
+        radial-gradient(ellipse at 85% 30%, rgba(175, 128, 79, .16), transparent 34%),
+        linear-gradient(115deg, #FAF8F4 0%, #F2EDE6 100%);
     }
 
     .hero::before {
@@ -442,7 +432,7 @@
       right: -160px;
       width: 600px;
       height: 600px;
-      border: 1px solid rgba(82, 104, 91, .13);
+      border: 1px solid rgba(175, 128, 79, .16);
       border-radius: 50%;
       content: "";
     }
@@ -453,7 +443,7 @@
       right: -80px;
       width: 440px;
       height: 440px;
-      border: 1px solid rgba(82, 104, 91, .13);
+      border: 1px solid rgba(175, 128, 79, .16);
       border-radius: 50%;
       content: "";
     }
@@ -472,7 +462,7 @@
     }
 
     .hero-copy h1 em {
-      color: var(--primary-light);
+      color: var(--primary);
       font-weight: 400;
     }
 
@@ -506,9 +496,9 @@
       height: 34px;
       flex-shrink: 0;
       place-items: center;
-      border: 1px solid rgba(184, 155, 115, .6);
+      border: 1px solid rgba(175, 128, 79, .6);
       border-radius: 50%;
-      color: var(--champagne);
+      color: var(--primary);
       font-family: var(--font-heading);
       font-size: 19px;
     }
@@ -525,8 +515,8 @@
       border-radius: 46% 46% 12px 12px;
       background:
         radial-gradient(ellipse at 54% 32%, rgba(255, 255, 255, .9) 0 9%, transparent 9.5%),
-        radial-gradient(ellipse at 50% 47%, rgba(220, 228, 220, .95) 0 24%, transparent 24.5%),
-        linear-gradient(145deg, #DCE4DC 0%, #AABBAE 52%, #758A7B 100%);
+        radial-gradient(ellipse at 50% 47%, rgba(240, 229, 216, .95) 0 24%, transparent 24.5%),
+        linear-gradient(145deg, #F0E5D8 0%, #D6BDA1 52%, #AF804F 100%);
     }
 
     .hero-art-panel::before {
@@ -535,7 +525,7 @@
       left: 17%;
       width: 66%;
       height: 78%;
-      border: 1px solid rgba(255, 255, 255, .65);
+      border: 1px solid rgba(255, 255, 255, .75);
       border-radius: 50% 50% 44% 44%;
       content: "";
       transform: rotate(-9deg);
@@ -547,7 +537,7 @@
       bottom: -20%;
       width: 70%;
       height: 70%;
-      border: 1px solid rgba(255, 255, 255, .4);
+      border: 1px solid rgba(255, 255, 255, .5);
       border-radius: 50%;
       content: "";
     }
@@ -558,7 +548,7 @@
       left: 27%;
       width: 46%;
       height: 62%;
-      border: 1px solid rgba(255, 255, 255, .72);
+      border: 1px solid rgba(255, 255, 255, .8);
       border-radius: 50%;
       transform: rotate(23deg);
     }
@@ -571,10 +561,10 @@
       width: 170px;
       height: 170px;
       place-items: center;
-      border: 1px solid rgba(255, 255, 255, .8);
+      border: 1px solid rgba(255, 255, 255, .85);
       border-radius: 50%;
-      background: rgba(248, 247, 243, .7);
-      color: var(--primary);
+      background: rgba(250, 248, 244, .8);
+      color: var(--primary-dark);
       font-family: var(--font-heading);
       font-size: 25px;
       text-align: center;
@@ -594,7 +584,7 @@
       bottom: 0;
       width: min(260px, 72%);
       padding: 22px 24px;
-      border: 1px solid rgba(38, 53, 47, .08);
+      border: 1px solid rgba(175, 128, 79, .12);
       border-radius: var(--radius-md);
       background: var(--surface);
       box-shadow: var(--shadow-card);
@@ -603,7 +593,7 @@
     .hero-floating-card strong {
       display: block;
       margin-bottom: 5px;
-      color: var(--primary);
+      color: var(--primary-dark);
       font-family: var(--font-heading);
       font-size: 23px;
       font-weight: 400;
@@ -620,7 +610,7 @@
     .intro-strip {
       position: relative;
       z-index: 2;
-      background: var(--primary);
+      background: var(--primary-dark);
       color: var(--surface);
     }
 
@@ -644,7 +634,7 @@
     }
 
     .intro-number {
-      color: #D9C6A9;
+      color: #E6C9A8;
       font-family: var(--font-heading);
       font-size: 28px;
     }
@@ -683,12 +673,12 @@
 
     .pathway-card:hover {
       transform: translateY(-6px);
-      border-color: var(--sage);
+      border-color: var(--primary);
       box-shadow: var(--shadow-soft);
     }
 
     .pathway-index {
-      color: var(--champagne);
+      color: var(--primary);
       font-family: var(--font-heading);
       font-size: 22px;
     }
@@ -713,7 +703,7 @@
       font-size: 9px;
     }
 
-    /* Six care icons */
+    /* Services */
 
     .care-grid {
       display: grid;
@@ -733,7 +723,7 @@
     }
 
     .care-card:hover {
-      background: #F5F6F1;
+      background: #FBF6F0;
     }
 
     .care-icon {
@@ -742,10 +732,10 @@
       height: 54px;
       margin-bottom: 28px;
       place-items: center;
-      border: 1px solid var(--sage-light);
+      border: 1px solid #E9D8C5;
       border-radius: 50%;
-      background: #F5F7F3;
-      color: var(--primary-light);
+      background: #FAF5EF;
+      color: var(--primary);
     }
 
     .care-icon svg {
@@ -766,7 +756,7 @@
     .journey {
       position: relative;
       overflow: hidden;
-      background: var(--primary);
+      background: var(--primary-dark);
       color: var(--surface);
     }
 
@@ -776,13 +766,17 @@
       right: -180px;
       width: 540px;
       height: 540px;
-      border: 1px solid rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .13);
       border-radius: 50%;
       content: "";
     }
 
     .journey .eyebrow {
-      color: #D9C6A9;
+      color: #E6C9A8;
+    }
+
+    .journey .eyebrow::before {
+      background: #D2B58F;
     }
 
     .journey h2 {
@@ -809,7 +803,7 @@
     .journey-step-number {
       display: block;
       margin-bottom: 24px;
-      color: #D9C6A9;
+      color: #E6C9A8;
       font-family: var(--font-heading);
       font-size: 34px;
     }
@@ -845,13 +839,13 @@
       border-radius: var(--radius-xl);
       background:
         radial-gradient(ellipse at 52% 35%, rgba(255, 255, 255, .8), transparent 32%),
-        linear-gradient(145deg, #E2E8DF 0%, #A6B7A9 55%, #6D8374 100%);
+        linear-gradient(145deg, #F0E5D8 0%, #D6BDA1 55%, #AF804F 100%);
     }
 
     .about-visual::before,
     .about-visual::after {
       position: absolute;
-      border: 1px solid rgba(255, 255, 255, .7);
+      border: 1px solid rgba(255, 255, 255, .75);
       border-radius: 50%;
       content: "";
     }
@@ -876,17 +870,17 @@
       bottom: 24px;
       left: 24px;
       padding: 23px;
-      border: 1px solid rgba(255, 255, 255, .55);
+      border: 1px solid rgba(255, 255, 255, .65);
       border-radius: var(--radius-md);
-      background: rgba(248, 247, 243, .78);
-      color: var(--primary);
+      background: rgba(250, 248, 244, .84);
+      color: var(--primary-dark);
       backdrop-filter: blur(10px);
     }
 
     .about-visual-label span {
       display: block;
       margin-bottom: 7px;
-      color: var(--primary-light);
+      color: var(--primary);
       font-size: 9px;
       font-weight: 800;
       letter-spacing: .15em;
@@ -924,7 +918,7 @@
       place-items: center;
       border-radius: 50%;
       background: var(--sage-light);
-      color: var(--primary);
+      color: var(--primary-dark);
     }
 
     .value-mark svg {
@@ -976,7 +970,7 @@
       place-items: center;
       border-radius: 50%;
       background: var(--sage-light);
-      color: var(--primary);
+      color: var(--primary-dark);
       font-family: var(--font-heading);
       font-size: 23px;
     }
@@ -1024,7 +1018,7 @@
 
     .testimonial-mark {
       margin-bottom: 18px;
-      color: var(--champagne);
+      color: var(--primary);
       font-family: var(--font-heading);
       font-size: 42px;
       line-height: 1;
@@ -1048,7 +1042,7 @@
       margin-top: auto;
       padding-top: 15px;
       border-top: 1px solid var(--border);
-      color: var(--primary);
+      color: var(--primary-dark);
       font-size: 10px;
       font-weight: 800;
     }
@@ -1146,7 +1140,7 @@
       right: -210px;
       width: 580px;
       height: 580px;
-      border: 1px solid rgba(82, 104, 91, .15);
+      border: 1px solid rgba(175, 128, 79, .16);
       border-radius: 50%;
       content: "";
     }
@@ -1183,7 +1177,7 @@
       height: 40px;
       flex-shrink: 0;
       place-items: center;
-      border: 1px solid rgba(82, 104, 91, .25);
+      border: 1px solid rgba(175, 128, 79, .3);
       border-radius: 50%;
       color: var(--primary);
     }
@@ -1232,7 +1226,7 @@
 
     .contact-panel {
       padding: 38px;
-      border: 1px solid rgba(38, 53, 47, .08);
+      border: 1px solid rgba(175, 128, 79, .12);
       border-radius: var(--radius-lg);
       background: var(--surface);
       box-shadow: var(--shadow-soft);
@@ -1288,13 +1282,13 @@
     }
 
     .footer-brand .brand-subtitle {
-      color: #C6B18F;
+      color: #E6C9A8;
     }
 
     .footer-brand p {
       max-width: 330px;
       margin-top: 24px;
-      color: rgba(255, 255, 255, .62);
+      color: rgba(255, 255, 255, .7);
       font-size: 11px;
       line-height: 1.9;
     }
@@ -1314,14 +1308,14 @@
 
     .footer-links a,
     .footer-links span {
-      color: rgba(255, 255, 255, .66);
+      color: rgba(255, 255, 255, .72);
       font-size: 11px;
       line-height: 1.7;
       transition: color .2s ease;
     }
 
     .footer-links a:hover {
-      color: #E4D2B8;
+      color: #EED9BE;
     }
 
     .footer-links a.inline-link,
@@ -1344,19 +1338,19 @@
       justify-content: space-between;
       gap: 20px;
       padding-top: 23px;
-      border-top: 1px solid rgba(255, 255, 255, .14);
-      color: rgba(255, 255, 255, .48);
+      border-top: 1px solid rgba(255, 255, 255, .17);
+      color: rgba(255, 255, 255, .55);
       font-size: 9px;
     }
 
     .footer-bottom a {
-      color: rgba(255, 255, 255, .7);
+      color: rgba(255, 255, 255, .8);
     }
 
     .medical-note {
       max-width: 750px;
       margin-top: 20px;
-      color: rgba(255, 255, 255, .42);
+      color: rgba(255, 255, 255, .48);
       font-size: 9px;
       line-height: 1.8;
     }
@@ -1367,7 +1361,7 @@
       display: none;
     }
 
-    /* Interaction and responsive layout */
+    /* Reveal animations */
 
     .reveal {
       opacity: 0;
@@ -1435,7 +1429,7 @@
         padding: 12px 24px 22px;
         border-bottom: 1px solid var(--border);
         background: var(--background);
-        box-shadow: 0 18px 25px rgba(30, 42, 35, .08);
+        box-shadow: 0 18px 25px rgba(80, 59, 38, .08);
       }
 
       .nav-menu.is-open {
@@ -1728,9 +1722,9 @@
         grid-template-columns: 1fr 1fr;
         gap: 8px;
         padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
-        border-top: 1px solid rgba(38, 53, 47, .12);
-        background: rgba(248, 247, 243, .97);
-        box-shadow: 0 -8px 24px rgba(30, 42, 35, .08);
+        border-top: 1px solid rgba(175, 128, 79, .18);
+        background: rgba(250, 248, 244, .97);
+        box-shadow: 0 -8px 24px rgba(80, 59, 38, .08);
         backdrop-filter: blur(12px);
       }
 
@@ -1753,7 +1747,7 @@
       .mobile-cta a:first-child {
         border: 1px solid var(--primary);
         background: transparent;
-        color: var(--primary);
+        color: var(--primary-dark);
       }
     }
 
@@ -1850,7 +1844,12 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button" href="https://www.balsam.clinic/contact-us">Book an Appointment <svg class="icon-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="button" href="https://www.balsam.clinic/contact-us">
+              Book an Appointment
+              <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M7 17 17 7M8 7h9v9"/>
+              </svg>
+            </a>
             <a class="button button--outline" href="#care">Explore Our Care</a>
           </div>
 
@@ -1921,7 +1920,7 @@
               <h3>Maintain</h3>
               <p>Support your everyday oral health with preventive care and dental hygiene services.</p>
             </div>
-            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="pathway-card reveal">
@@ -1930,7 +1929,7 @@
               <h3>Restore</h3>
               <p>Explore options for damaged, weakened or missing teeth, including restorative treatments.</p>
             </div>
-            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="pathway-card reveal">
@@ -1939,7 +1938,7 @@
               <h3>Align</h3>
               <p>Discover orthodontic options, including fixed braces and clear aligner treatments.</p>
             </div>
-            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="pathway-card reveal">
@@ -1948,7 +1947,7 @@
               <h3>Enhance</h3>
               <p>Learn about cosmetic options such as veneers and professional teeth whitening.</p>
             </div>
-            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="text-link" href="https://www.balsam.clinic/services">Explore care <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="pathway-card reveal">
@@ -1957,14 +1956,14 @@
               <h3>Urgent Care</h3>
               <p>Contact the clinic about an urgent dental concern and discuss the next available steps.</p>
             </div>
-            <a class="text-link" href="tel:+97145524455">Contact the clinic <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="text-link" href="tel:+97145524455">Contact the clinic <span aria-hidden="true">↗</span></a>
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- SIX CUSTOM SERVICE ICONS -->
+    <!-- DENTAL SERVICES -->
     <section class="section section--light">
       <div class="container">
 
@@ -1981,7 +1980,7 @@
 
           <article class="care-card reveal">
             <div class="care-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <svg viewBox="0 0 32 32">
                 <path d="M16 5.5c-3.4-2.5-9.2-.6-9.2 5.4 0 4.3 2.4 7.3 3.5 11.1.6 2 1.1 4.3 2.5 4.3 1.3 0 1.4-5.5 3.2-5.5s1.9 5.5 3.2 5.5c1.4 0 1.9-2.3 2.5-4.3 1.1-3.8 3.5-6.8 3.5-11.1 0-6-5.8-7.9-9.2-5.4Z"/>
                 <path d="M12 11.5c1.1-1.1 2.1-1.5 4-1.5"/>
               </svg>
@@ -1992,7 +1991,7 @@
 
           <article class="care-card reveal">
             <div class="care-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <svg viewBox="0 0 32 32">
                 <path d="M7 8.5h18M7 16h18M7 23.5h18"/>
                 <path d="M10 5.5v6M22 13v6M13 20.5v6"/>
                 <circle cx="10" cy="8.5" r="2.2"/>
@@ -2006,7 +2005,7 @@
 
           <article class="care-card reveal">
             <div class="care-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <svg viewBox="0 0 32 32">
                 <path d="M5.5 10.5h21v15h-21z"/>
                 <path d="M9 10.5V7h14v3.5M11 16h10M11 20h7"/>
                 <path d="M22.5 5.5v5M20 8h5"/>
@@ -2018,7 +2017,7 @@
 
           <article class="care-card reveal">
             <div class="care-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <svg viewBox="0 0 32 32">
                 <path d="M16 4.5v23M8.5 9.5c2.1-2 4.6-3 7.5-3s5.4 1 7.5 3"/>
                 <path d="M8 15.5c1.8 2 4.5 3.1 8 3.1s6.2-1.1 8-3.1"/>
                 <path d="M10 24c1.8 1.4 3.8 2.1 6 2.1s4.2-.7 6-2.1"/>
@@ -2030,7 +2029,7 @@
 
           <article class="care-card reveal">
             <div class="care-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <svg viewBox="0 0 32 32">
                 <path d="M16 4.5 25 8v7.2c0 6-3.7 10.1-9 12.3-5.3-2.2-9-6.3-9-12.3V8l9-3.5Z"/>
                 <path d="m11.5 16 3 3 6-6"/>
               </svg>
@@ -2041,7 +2040,7 @@
 
           <article class="care-card reveal">
             <div class="care-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <svg viewBox="0 0 32 32">
                 <path d="M16 4.5v23M8.5 8.5l15 15M23.5 8.5l-15 15"/>
                 <circle cx="16" cy="16" r="10.5"/>
                 <path d="M12 16h8M16 12v8"/>
@@ -2096,7 +2095,12 @@
         </div>
 
         <div style="margin-top:48px">
-          <a class="button button--light" href="https://www.balsam.clinic/contact-us">Arrange Your Visit <svg class="icon-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="button button--light" href="https://www.balsam.clinic/contact-us">
+            Arrange Your Visit
+            <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17 17 7M8 7h9v9"/>
+            </svg>
+          </a>
         </div>
 
       </div>
@@ -2106,7 +2110,7 @@
     <section class="section" id="about">
       <div class="container about-grid">
 
-        <div class="about-visual reveal" role="img" aria-label="Abstract sage and ivory visual representing a calm dental care environment">
+        <div class="about-visual reveal" role="img" aria-label="Abstract bronze and ivory visual representing a calm dental care environment">
           <div class="about-visual-label">
             <span>The Balsam approach</span>
             <strong>Care built around your needs.</strong>
@@ -2133,7 +2137,9 @@
 
             <div class="value-item">
               <span class="value-mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="m5 12.5 4.5 4.5L19 7.5"/>
+                </svg>
               </span>
               <div>
                 <strong>Patient-centred care</strong>
@@ -2143,7 +2149,9 @@
 
             <div class="value-item">
               <span class="value-mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="m5 12.5 4.5 4.5L19 7.5"/>
+                </svg>
               </span>
               <div>
                 <strong>Communication and transparency</strong>
@@ -2153,7 +2161,9 @@
 
             <div class="value-item">
               <span class="value-mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="m5 12.5 4.5 4.5L19 7.5"/>
+                </svg>
               </span>
               <div>
                 <strong>A broad range of services</strong>
@@ -2163,7 +2173,7 @@
 
           </div>
 
-          <a class="text-link" href="https://www.balsam.clinic/about-us">Discover the clinic <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="text-link" href="https://www.balsam.clinic/about-us">Discover the clinic <span aria-hidden="true">↗</span></a>
         </div>
 
       </div>
@@ -2271,7 +2281,7 @@
         </div>
 
         <div style="margin-top:30px;text-align:center">
-          <a class="text-link" href="https://www.balsam.clinic/">Explore Balsam Clinics <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="text-link" href="https://www.balsam.clinic/">Explore Balsam Clinics <span aria-hidden="true">↗</span></a>
         </div>
 
       </div>
@@ -2289,7 +2299,7 @@
             Contact the clinic directly if you need information about a
             particular treatment or appointment.
           </p>
-          <a class="text-link" href="https://www.balsam.clinic/contact-us">Contact the clinic <svg class="icon-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="text-link" href="https://www.balsam.clinic/contact-us">Contact the clinic <span aria-hidden="true">↗</span></a>
         </div>
 
         <div class="faq-list reveal">
@@ -2297,7 +2307,9 @@
           <div class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
               What dental services does Balsam Clinics offer?
-              <span class="faq-symbol" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><path d="M6 1v10M1 6h10"/></svg></span>
+              <span class="faq-symbol" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10"/></svg>
+              </span>
             </button>
             <div class="faq-answer">
               Published services include orthodontics, periodontal care, root
@@ -2310,7 +2322,9 @@
           <div class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
               How can I arrange a dental appointment?
-              <span class="faq-symbol" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><path d="M6 1v10M1 6h10"/></svg></span>
+              <span class="faq-symbol" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10"/></svg>
+              </span>
             </button>
             <div class="faq-answer">
               You can contact the clinic by calling +971 4 552 4455 or use the
@@ -2321,7 +2335,9 @@
           <div class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
               Where is Balsam Clinics located?
-              <span class="faq-symbol" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><path d="M6 1v10M1 6h10"/></svg></span>
+              <span class="faq-symbol" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10"/></svg>
+              </span>
             </button>
             <div class="faq-answer">
               The clinic lists its location as Dubai Science Park, South Tower,
@@ -2332,7 +2348,9 @@
           <div class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
               Can I ask about a specific treatment before booking?
-              <span class="faq-symbol" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><path d="M6 1v10M1 6h10"/></svg></span>
+              <span class="faq-symbol" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10"/></svg>
+              </span>
             </button>
             <div class="faq-answer">
               Yes. Contact the clinic to ask about the services listed on its
@@ -2345,7 +2363,9 @@
           <div class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">
               What are the clinic's opening hours?
-              <span class="faq-symbol" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false"><path d="M6 1v10M1 6h10"/></svg></span>
+              <span class="faq-symbol" aria-hidden="true">
+                <svg viewBox="0 0 12 12"><path d="M6 1v10M1 6h10"/></svg>
+              </span>
             </button>
             <div class="faq-answer">
               The official contact page lists Monday to Friday, 10:00 AM to
@@ -2374,18 +2394,23 @@
 
             <div class="contact-detail">
               <span class="contact-detail-mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
               </span>
               <div>
                 <strong>Visit the clinic</strong>
                 <span>Dubai Science Park, South Tower, Second Floor,<br>Al Barsha South, Dubai, UAE</span>
-                <a class="inline-link" href="https://maps.google.com/?q=Dubai+Science+Park+South+Tower+Al+Barsha+South+Dubai" target="_blank" rel="noopener noreferrer">View location <svg class="icon-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                <a class="inline-link" href="https://maps.google.com/?q=Dubai+Science+Park+South+Tower+Al+Barsha+South+Dubai" target="_blank" rel="noopener noreferrer">View location <span aria-hidden="true">↗</span></a>
               </div>
             </div>
 
             <div class="contact-detail">
               <span class="contact-detail-mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/>
+                </svg>
               </span>
               <div>
                 <strong>Call the clinic</strong>
@@ -2395,7 +2420,10 @@
 
             <div class="contact-detail">
               <span class="contact-detail-mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <path d="m3 7 9 6 9-6"/>
+                </svg>
               </span>
               <div>
                 <strong>Email</strong>
@@ -2414,7 +2442,13 @@
             appointment arrangements.
           </p>
 
-          <a class="button" href="https://www.balsam.clinic/contact-us">Book an Appointment <svg class="icon-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="button" href="https://www.balsam.clinic/contact-us">
+            Book an Appointment
+            <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17 17 7M8 7h9v9"/>
+            </svg>
+          </a>
+
           <a class="button button--outline" href="tel:+97145524455">Call +971 4 552 4455</a>
 
           <small>
@@ -2464,7 +2498,7 @@
             <a href="tel:+97145524455">+971 4 552 4455</a>
             <a href="mailto:info@balsam-clinics.com">info@balsam-clinics.com</a>
             <span>Dubai Science Park, South Tower,<br>Second Floor, Al Barsha South,<br>Dubai, UAE</span>
-            <a class="inline-link" href="https://www.balsam.clinic/contact-us">Appointment information <svg class="icon-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="inline-link" href="https://www.balsam.clinic/contact-us">Appointment information <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
@@ -2472,7 +2506,7 @@
 
       <div class="footer-bottom">
         <span>&copy; <span id="current-year">2026</span> Balsam Clinics. All rights reserved.</span>
-        <a href="#home">Back to top <svg class="icon-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+        <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
       </div>
 
       <p class="medical-note">
@@ -2485,7 +2519,7 @@
     </div>
   </footer>
 
-  <!-- Exactly two persistent mobile actions -->
+  <!-- Mobile actions -->
   <div class="mobile-cta" aria-label="Quick contact actions">
     <a href="tel:+97145524455">Call Now</a>
     <a href="https://www.balsam.clinic/contact-us">Book Appointment</a>
@@ -2499,6 +2533,7 @@
     if (menuToggle && navigation) {
       menuToggle.addEventListener("click", () => {
         const isOpen = navigation.classList.toggle("is-open");
+
         menuToggle.setAttribute("aria-expanded", String(isOpen));
         menuToggle.setAttribute(
           "aria-label",
@@ -2526,11 +2561,13 @@
       });
     });
 
-    // Subtle reveal effect, with reduced-motion support
+    // Reveal animations with reduced-motion support
     const revealElements = document.querySelectorAll(".reveal");
 
-    if ("IntersectionObserver" in window &&
-        !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (
+      "IntersectionObserver" in window &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
       const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -2542,9 +2579,13 @@
         threshold: 0.12
       });
 
-      revealElements.forEach((element) => revealObserver.observe(element));
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
     } else {
-      revealElements.forEach((element) => element.classList.add("is-visible"));
+      revealElements.forEach((element) => {
+        element.classList.add("is-visible");
+      });
     }
 
     // Dynamic copyright year
